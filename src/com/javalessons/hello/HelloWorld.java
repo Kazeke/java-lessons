@@ -7,7 +7,7 @@ public class HelloWorld {
         byte b = 10;
         short c = 200;
         int a = b + 23;
-        long myLongValue = 123_456_789_876L;
+        long myLongValue = 123_456_789_876_543_211_2L;
 
         float myFloatValue = 23.56f;
         double myDoubleValue = 56.45d;
@@ -48,6 +48,35 @@ public class HelloWorld {
 
         String s = "some string" + " some other string";
         System.out.println(s);
+
+        short someShort = b;
+        int someInt = someShort;
+
+        someShort = (short) someInt;
+
+
+        System.out.println("myLongValue = " + myLongValue);
+        someInt = (int) myLongValue;
+        System.out.println("someInt = " + someInt);
+
+        double someDouble = myFloatValue;
+        System.out.println("someDouble = " + someDouble);
+
+        double someIntToDouble = someInt;
+        System.out.println("someIntToDouble = " + someIntToDouble);
+
+        double someLongToDouble = myLongValue;
+        System.out.println("someLongToDouble = " + someLongToDouble);
+
+        long someDoubleToLong = (long) someLongToDouble;
+        System.out.println("someDoubleToLong = " + someDoubleToLong);
+/*
+
+        some comment
+        System.out.println("someInt " + someInt);
+        System.out.println("someShort " + someShort);
+*/
+
 
     }
 
